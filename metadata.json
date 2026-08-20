@@ -1,0 +1,6 @@
+{
+  "name": "LMS PAI SMP - Alur MERDEKA",
+  "description": "Learning Management System Pendidikan Agama Islam SMP berbasis Alur MERDEKA terintegrasi Google Sheets Database & Google Apps Script",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

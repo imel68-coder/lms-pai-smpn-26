@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+@keyframes cloudDriftSlow {
+  0% {
+    transform: translateX(-40%);
+  }
+  50% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes cloudDriftLoop1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes cloudDriftLoop2 {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes cloudDriftLoop3 {
+  0% {
+    transform: translateX(-70%);
+  }
+  100% {
+    transform: translateX(110vw);
+  }
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes greenLaserPulse {
+  0%, 100% {
+    opacity: 0.25;
+    transform: scaleY(0.95);
+    filter: drop-shadow(0 0 8px rgba(34, 197, 94, 0.4));
+  }
+  50% {
+    opacity: 0.85;
+    transform: scaleY(1.05);
+    filter: drop-shadow(0 0 25px rgba(34, 197, 94, 0.9)) drop-shadow(0 0 45px rgba(16, 185, 129, 0.7));
+  }
+}
+
+@keyframes greenStrobeFast {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(0.95);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  60% {
+    opacity: 0.4;
+    transform: scale(0.98);
+  }
+  80% {
+    opacity: 0.95;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes greenStrobeOffset {
+  0%, 100% {
+    opacity: 0.85;
+    transform: scale(1.08);
+  }
+  30% {
+    opacity: 0.25;
+    transform: scale(0.95);
+  }
+  65% {
+    opacity: 1;
+    transform: scale(1.12);
+  }
+}
+
+@keyframes towerGreenAura {
+  0%, 100% {
+    opacity: 0.45;
+    transform: scale(1);
+    box-shadow: 0 0 40px rgba(16, 185, 129, 0.5), inset 0 0 30px rgba(52, 211, 153, 0.3);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.06);
+    box-shadow: 0 0 90px rgba(34, 197, 94, 0.8), 0 0 140px rgba(16, 185, 129, 0.6), inset 0 0 60px rgba(52, 211, 153, 0.6);
+  }
+}
+
+@keyframes sparkleTwinkle {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(0.7) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3) rotate(45deg);
+  }
+}
+
+.animate-cloud-slow {
+  animation: cloudDriftLoop1 65s linear infinite;
+}
+
+.animate-cloud-medium {
+  animation: cloudDriftLoop2 45s linear infinite;
+}
+
+.animate-cloud-fast {
+  animation: cloudDriftLoop3 32s linear infinite;
+}
+
+.animate-gentle-float {
+  animation: gentleFloat 6s ease-in-out infinite;
+}
+
+.animate-green-laser {
+  animation: greenLaserPulse 3s ease-in-out infinite;
+}
+
+.animate-green-strobe {
+  animation: greenStrobeFast 1.8s ease-in-out infinite;
+}
+
+.animate-green-strobe-offset {
+  animation: greenStrobeOffset 2.4s ease-in-out infinite;
+}
+
+.animate-tower-aura {
+  animation: towerGreenAura 4s ease-in-out infinite;
+}
+
+.animate-sparkle-1 {
+  animation: sparkleTwinkle 2.2s ease-in-out infinite;
+}
+
+.animate-sparkle-2 {
+  animation: sparkleTwinkle 3.1s ease-in-out infinite 0.7s;
+}
+
+.animate-sparkle-3 {
+  animation: sparkleTwinkle 2.7s ease-in-out infinite 1.4s;
+}
+
